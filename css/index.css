@@ -1,0 +1,219 @@
+/* css reset start  */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    font-size: 18px;
+}
+
+/* css reset end  */
+
+/* html & body start  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAF9F6;
+}
+
+/* html & body end  */
+
+.text-span-color {
+    color: #FD5956;
+}
+
+/* header start  */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 4vw 0;
+    height: 8vh;
+}
+
+header .nav-list nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header .nav-list nav ul li a {
+    color: black;
+    padding-bottom: 5px;
+}
+
+header .nav-list nav ul li a:hover,
+header .nav-list nav ul li a.active {
+    color: #FD5956;
+    border-bottom: 3px solid #FD5956;
+}
+
+header .portfolio-button a {
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+/* header end  */
+
+/* home section start  */
+
+.home-feature {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 2vh 4vw;
+    background-image: url("../images/home-overlay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-feature .left-home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 50%;
+}
+
+.home-feature .left-home ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.home-feature .left-home ul li a {
+    color: black;
+}
+
+.home-feature .left-home ul li a i{
+    font-size: 20px;
+}
+
+.home-feature .left-home .cv-link a {
+    padding: 10px 20px;
+    background-color: #FD5956;
+    color: white;
+}
+
+.home-feature .right-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.home-feature .right-home img {
+    width: 70%;
+}
+
+/* home section end  */
+
+/* about section start  */
+
+.about-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2vh 4vw;
+}
+
+.about-feature img {
+    width: 50%;
+    background-image: url("../images/about-overlay.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* about section end  */
+
+/* contact section start  */
+
+.contact-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 2vh 4vw 4vh;
+    text-align: center;
+}
+
+.contact-feature ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-feature ul li a {
+    color: black;
+}
+
+.contact-feature ul li a i{
+    font-size: 20px;
+}
+
+/* contact section end  */
+
+/* footer start */
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    font-size: 18px;
+
+}
+
+/* footer end */
+
+/* custom scroll bar start  */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FD5956;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+
+/* custom scroll bar end   */

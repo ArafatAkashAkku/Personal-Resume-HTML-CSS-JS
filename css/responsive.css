@@ -1,0 +1,56 @@
+@media screen and (max-width:950px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    header {
+        display: none;
+    }
+
+    .home-feature {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .home-feature .left-home,
+    .home-feature .right-home {
+        width: 100%;
+    }
+
+    .about-feature img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+
+    .home-feature .right-home img {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+
+    .contact-feature .contact-img {
+        width: 70%;
+    }
+
+}
