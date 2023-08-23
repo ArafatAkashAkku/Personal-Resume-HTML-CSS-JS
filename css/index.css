@@ -10,19 +10,23 @@
     user-select: none;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-h2{
+h2 {
     font-size: 50px;
 }
 
-p{
+h3 {
+    font-size: 25px;
+}
+
+p {
     font-size: 20px;
 }
 
-a{
+a {
     font-size: 18px;
 }
 
@@ -36,6 +40,7 @@ html {
 
 body {
     background-color: #FAF9F6;
+    overflow-x: hidden;
 }
 
 /* html & body end  */
@@ -53,6 +58,9 @@ header {
     justify-content: space-between;
     padding: 10px 4vw 0;
     height: 8vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header .nav-list nav ul {
@@ -79,7 +87,77 @@ header .portfolio-button a {
     background-color: black;
 }
 
+header .menu-bar {
+    display: none;
+}
+
+header .fa-bars {
+    color: #FD5956;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+header .fa-xmark {
+    color: #FD5956;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+header .mobile-bar {
+    height: 92vh;
+    position: absolute;
+    top: 8vh;
+    background-color: #fff;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    z-index: 2001;
+}
+
+header .mobile-bar nav {
+    margin-top: 35px;
+}
+
+header .mobile-bar nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header .mobile-bar ul li a {
+    font-size: 25px;
+    color: black;
+    padding-bottom: 5px;
+}
+
+header .mobile-bar ul li a.active,
+header .mobile-bar ul li a:hover {
+    color: #FD5956;
+    border-bottom: 3px solid #FD5956;
+}
+
 /* header end  */
+
+/* progress bar section start  */
+
+.progress {
+    height: 5px;
+    width: 100%;
+    position: fixed;
+    top: 8vh;
+    z-index: 1000;
+}
+
+.highlight {
+    transition: width 0.5s linear;
+    width: 0%;
+    background-color: #FD5956;
+    height: 100%;
+}
+
+/* progress bar section end  */
 
 /* home section start  */
 
@@ -92,7 +170,8 @@ header .portfolio-button a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 91vh;
+    margin-top: 9vh;
 }
 
 .home-feature .left-home {
@@ -113,7 +192,7 @@ header .portfolio-button a {
     color: black;
 }
 
-.home-feature .left-home ul li a i{
+.home-feature .left-home ul li a i {
     font-size: 20px;
 }
 
@@ -146,7 +225,7 @@ header .portfolio-button a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2vh 4vw;
+    padding: 8vh 4vw 2vh;
 }
 
 .about-feature img {
@@ -159,6 +238,115 @@ header .portfolio-button a {
 
 /* about section end  */
 
+/* services section start  */
+
+.services-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8vh 4vw 2vh;
+}
+
+.services-feature .services-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.services-feature .services-box .box-feature {
+    padding: 15px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* services section end  */
+
+/* contributers section start  */
+
+.contributers-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 8vh 4vw 2vh;
+    text-align: center;
+}
+
+.contributers-feature .contributers-image {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contributers-feature .contributers-image img {
+    width: 50%;
+}
+
+/* contributers section end  */
+
+/* portfolio section start  */
+
+.portfolio-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 8vh 4vw 2vh;
+    text-align: center;
+}
+
+.portfolio-feature .portfolio-image {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.portfolio-feature .portfolio-image .portfolio-image-left,
+.portfolio-feature .portfolio-image .portfolio-image-right {
+    width: 50%;
+}
+
+.portfolio-feature .portfolio-image .portfolio-image-right {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.portfolio-feature .portfolio-image .portfolio-image-right div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.portfolio-feature .portfolio-image .portfolio-image-left img {
+    width: 88%;
+}
+
+.portfolio-feature .portfolio-image .portfolio-image-right img {
+    width: 50%;
+}
+
+/* portfolio section end  */
+
 /* contact section start  */
 
 .contact-feature {
@@ -167,7 +355,7 @@ header .portfolio-button a {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 2vh 4vw 4vh;
+    padding: 8vh 4vw 4vh;
     text-align: center;
 }
 
@@ -181,7 +369,7 @@ header .portfolio-button a {
     color: black;
 }
 
-.contact-feature ul li a i{
+.contact-feature ul li a i {
     font-size: 20px;
 }
 
@@ -189,13 +377,16 @@ header .portfolio-button a {
 
 /* footer start */
 
-footer{
+footer {
     text-align: center;
 }
 
-footer p{
+footer p {
     font-size: 18px;
+}
 
+footer p a {
+    font-size: 18px;
 }
 
 /* footer end */
